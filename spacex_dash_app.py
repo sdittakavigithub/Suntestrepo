@@ -32,7 +32,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                     value='ALL',
                                     placeholder='Select a Launch Site',
                                     searchable=True
-                                )
+                                ),
                                 html.Br(),
 
                                 # TASK 2: Add a pie chart to show the total successful launches count for all sites
@@ -47,7 +47,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                                 max=10000,
                                                 step=1000,
                                                 value=[min_payload, max_payload]
-                                                )
+                                                ),
 
                                 # TASK 4: Add a scatter chart to show the correlation between payload and launch success
                                 html.Div(dcc.Graph(id='success-payload-scatter-chart')),
